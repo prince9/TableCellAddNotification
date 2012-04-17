@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66846F68153DFF6300BFB7BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66846F67153DFF6300BFB7BD /* UIKit.framework */; };
+		66846F6A153DFF6300BFB7BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66846F69153DFF6300BFB7BD /* Foundation.framework */; };
+		66846F6C153DFF6300BFB7BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66846F6B153DFF6300BFB7BD /* CoreGraphics.framework */; };
+		66846F72153DFF6300BFB7BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66846F70153DFF6300BFB7BD /* InfoPlist.strings */; };
+		66846F74153DFF6300BFB7BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F73153DFF6300BFB7BD /* main.m */; };
+		66846F78153DFF6300BFB7BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F77153DFF6300BFB7BD /* AppDelegate.m */; };
+		66846F7B153DFF6300BFB7BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66846F79153DFF6300BFB7BD /* MainStoryboard.storyboard */; };
+		66846F7E153DFF6300BFB7BD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F7D153DFF6300BFB7BD /* MasterViewController.m */; };
+		66846F81153DFF6300BFB7BD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F80153DFF6300BFB7BD /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66846F63153DFF6300BFB7BD /* TableTabNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTabNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66846F67153DFF6300BFB7BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66846F69153DFF6300BFB7BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66846F6B153DFF6300BFB7BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66846F6F153DFF6300BFB7BD /* TableTabNotification-Info.plist */ = {isa = PBXFileReference; path = "TableTabNotification-Info.plist"; sourceTree = "<group>"; };
+		66846F71153DFF6300BFB7BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66846F73153DFF6300BFB7BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66846F75153DFF6300BFB7BD /* TableTabNotification-Prefix.pch */ = {isa = PBXFileReference; path = "TableTabNotification-Prefix.pch"; sourceTree = "<group>"; };
+		66846F76153DFF6300BFB7BD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		66846F77153DFF6300BFB7BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66846F7A153DFF6300BFB7BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		66846F7C153DFF6300BFB7BD /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		66846F7D153DFF6300BFB7BD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		66846F7F153DFF6300BFB7BD /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		66846F80153DFF6300BFB7BD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66846F60153DFF6300BFB7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66846F68153DFF6300BFB7BD /* UIKit.framework in Frameworks */,
+				66846F6A153DFF6300BFB7BD /* Foundation.framework in Frameworks */,
+				66846F6C153DFF6300BFB7BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66846F58153DFF6300BFB7BD = {
+			isa = PBXGroup;
+			children = (
+				66846F6D153DFF6300BFB7BD /* TableTabNotification */,
+				66846F66153DFF6300BFB7BD /* Frameworks */,
+				66846F64153DFF6300BFB7BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66846F64153DFF6300BFB7BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66846F63153DFF6300BFB7BD /* TableTabNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66846F66153DFF6300BFB7BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66846F67153DFF6300BFB7BD /* UIKit.framework */,
+				66846F69153DFF6300BFB7BD /* Foundation.framework */,
+				66846F6B153DFF6300BFB7BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66846F6D153DFF6300BFB7BD /* TableTabNotification */ = {
+			isa = PBXGroup;
+			children = (
+				66846F76153DFF6300BFB7BD /* AppDelegate.h */,
+				66846F77153DFF6300BFB7BD /* AppDelegate.m */,
+				66846F79153DFF6300BFB7BD /* MainStoryboard.storyboard */,
+				66846F7C153DFF6300BFB7BD /* MasterViewController.h */,
+				66846F7D153DFF6300BFB7BD /* MasterViewController.m */,
+				66846F7F153DFF6300BFB7BD /* DetailViewController.h */,
+				66846F80153DFF6300BFB7BD /* DetailViewController.m */,
+				66846F6E153DFF6300BFB7BD /* Supporting Files */,
+			);
+			path = TableTabNotification;
+			sourceTree = "<group>";
+		};
+		66846F6E153DFF6300BFB7BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66846F6F153DFF6300BFB7BD /* TableTabNotification-Info.plist */,
+				66846F70153DFF6300BFB7BD /* InfoPlist.strings */,
+				66846F73153DFF6300BFB7BD /* main.m */,
+				66846F75153DFF6300BFB7BD /* TableTabNotification-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66846F62153DFF6300BFB7BD /* TableTabNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66846F84153DFF6300BFB7BD /* Build configuration list for PBXNativeTarget "TableTabNotification" */;
+			buildPhases = (
+				66846F5F153DFF6300BFB7BD /* Sources */,
+				66846F60153DFF6300BFB7BD /* Frameworks */,
+				66846F61153DFF6300BFB7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableTabNotification;
+			productName = TableTabNotification;
+			productReference = 66846F63153DFF6300BFB7BD /* TableTabNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66846F5A153DFF6300BFB7BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 66846F5D153DFF6300BFB7BD /* Build configuration list for PBXProject "TableTabNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66846F58153DFF6300BFB7BD;
+			productRefGroup = 66846F64153DFF6300BFB7BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66846F62153DFF6300BFB7BD /* TableTabNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66846F61153DFF6300BFB7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66846F72153DFF6300BFB7BD /* InfoPlist.strings in Resources */,
+				66846F7B153DFF6300BFB7BD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66846F5F153DFF6300BFB7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66846F74153DFF6300BFB7BD /* main.m in Sources */,
+				66846F78153DFF6300BFB7BD /* AppDelegate.m in Sources */,
+				66846F7E153DFF6300BFB7BD /* MasterViewController.m in Sources */,
+				66846F81153DFF6300BFB7BD /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66846F70153DFF6300BFB7BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66846F71153DFF6300BFB7BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66846F79153DFF6300BFB7BD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66846F7A153DFF6300BFB7BD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66846F82153DFF6300BFB7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66846F83153DFF6300BFB7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66846F85153DFF6300BFB7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableTabNotification/TableTabNotification-Prefix.pch";
+				INFOPLIST_FILE = "TableTabNotification/TableTabNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66846F86153DFF6300BFB7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableTabNotification/TableTabNotification-Prefix.pch";
+				INFOPLIST_FILE = "TableTabNotification/TableTabNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66846F5D153DFF6300BFB7BD /* Build configuration list for PBXProject "TableTabNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66846F82153DFF6300BFB7BD /* Debug */,
+				66846F83153DFF6300BFB7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66846F84153DFF6300BFB7BD /* Build configuration list for PBXNativeTarget "TableTabNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66846F85153DFF6300BFB7BD /* Debug */,
+				66846F86153DFF6300BFB7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66846F5A153DFF6300BFB7BD /* Project object */;
+}
