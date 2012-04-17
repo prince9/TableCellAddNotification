@@ -16,6 +16,8 @@
 		66846F7B153DFF6300BFB7BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66846F79153DFF6300BFB7BD /* MainStoryboard.storyboard */; };
 		66846F7E153DFF6300BFB7BD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F7D153DFF6300BFB7BD /* MasterViewController.m */; };
 		66846F81153DFF6300BFB7BD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F80153DFF6300BFB7BD /* DetailViewController.m */; };
+		66846F89153DFF9700BFB7BD /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66846F88153DFF9700BFB7BD /* Tab1ViewController.m */; };
+		66846F8B153E018800BFB7BD /* TabTableNotificationReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66846F8A153E018800BFB7BD /* TabTableNotificationReadMe.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,17 +25,20 @@
 		66846F67153DFF6300BFB7BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66846F69153DFF6300BFB7BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66846F6B153DFF6300BFB7BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		66846F6F153DFF6300BFB7BD /* TableTabNotification-Info.plist */ = {isa = PBXFileReference; path = "TableTabNotification-Info.plist"; sourceTree = "<group>"; };
+		66846F6F153DFF6300BFB7BD /* TableTabNotification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableTabNotification-Info.plist"; sourceTree = "<group>"; };
 		66846F71153DFF6300BFB7BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66846F73153DFF6300BFB7BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66846F75153DFF6300BFB7BD /* TableTabNotification-Prefix.pch */ = {isa = PBXFileReference; path = "TableTabNotification-Prefix.pch"; sourceTree = "<group>"; };
-		66846F76153DFF6300BFB7BD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		66846F75153DFF6300BFB7BD /* TableTabNotification-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableTabNotification-Prefix.pch"; sourceTree = "<group>"; };
+		66846F76153DFF6300BFB7BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66846F77153DFF6300BFB7BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		66846F7A153DFF6300BFB7BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		66846F7C153DFF6300BFB7BD /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		66846F7C153DFF6300BFB7BD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		66846F7D153DFF6300BFB7BD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		66846F7F153DFF6300BFB7BD /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		66846F7F153DFF6300BFB7BD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		66846F80153DFF6300BFB7BD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		66846F87153DFF9700BFB7BD /* Tab1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab1ViewController.h; sourceTree = "<group>"; };
+		66846F88153DFF9700BFB7BD /* Tab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
+		66846F8A153E018800BFB7BD /* TabTableNotificationReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TabTableNotificationReadMe.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 		66846F6D153DFF6300BFB7BD /* TableTabNotification */ = {
 			isa = PBXGroup;
 			children = (
+				66846F8A153E018800BFB7BD /* TabTableNotificationReadMe.txt */,
 				66846F76153DFF6300BFB7BD /* AppDelegate.h */,
 				66846F77153DFF6300BFB7BD /* AppDelegate.m */,
 				66846F79153DFF6300BFB7BD /* MainStoryboard.storyboard */,
@@ -88,6 +94,8 @@
 				66846F7F153DFF6300BFB7BD /* DetailViewController.h */,
 				66846F80153DFF6300BFB7BD /* DetailViewController.m */,
 				66846F6E153DFF6300BFB7BD /* Supporting Files */,
+				66846F87153DFF9700BFB7BD /* Tab1ViewController.h */,
+				66846F88153DFF9700BFB7BD /* Tab1ViewController.m */,
 			);
 			path = TableTabNotification;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			files = (
 				66846F72153DFF6300BFB7BD /* InfoPlist.strings in Resources */,
 				66846F7B153DFF6300BFB7BD /* MainStoryboard.storyboard in Resources */,
+				66846F8B153E018800BFB7BD /* TabTableNotificationReadMe.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +178,7 @@
 				66846F78153DFF6300BFB7BD /* AppDelegate.m in Sources */,
 				66846F7E153DFF6300BFB7BD /* MasterViewController.m in Sources */,
 				66846F81153DFF6300BFB7BD /* DetailViewController.m in Sources */,
+				66846F89153DFF9700BFB7BD /* Tab1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

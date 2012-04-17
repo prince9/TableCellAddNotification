@@ -29,8 +29,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
+    /*
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+     */
+    
+    //追加、add 通知を受信して- (void)insertNewObject:を実行
+    // notice is received.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(insertNewObject:) name:@"P1" object:nil];
+
 }
 
 - (void)viewDidUnload
@@ -43,8 +50,8 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
-- (void)insertNewObject:(id)sender
+//追加、add (NSNotification *) notificationを忘れずに
+- (void)insertNewObject:(NSNotification *) notification
 {
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
@@ -69,9 +76,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-
+    //追加、add 日時の表記を変える
+    //The notation of time is changed.
+    //日時の書式を作成
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy年 MM/dd HH:mm"];
+    
     NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
+    //書式を変更
+    NSString *dateString = [formatter stringFromDate:object];
+    //日時を表示
+    cell.textLabel.text = dateString;
+    
+
     return cell;
 }
 
@@ -112,7 +129,19 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = [_objects objectAtIndex:indexPath.row];
+        //追加、add
+        DetailViewController *detailViewController = [segue destinationViewController];
         [[segue destinationViewController] setDetailItem:object];
+        //追加、add 日時の表記を変える
+        //The notation of time is changed. 
+        //日時の書式を作成
+        NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
+        [formatter2 setDateFormat:@"yyyy年 MM/dd HH:mm"];
+        //書式を変更
+        NSString *dateString2 = [formatter2 stringFromDate:object];
+        //日時を表示する準備(DetailViewControllerに送る)
+        //send Date-data DetailViewController.
+        detailViewController.myStr = dateString2;
     }
 }
 

@@ -16,6 +16,8 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+//追加、add
+@synthesize myStr;
 
 #pragma mark - Managing the detail item
 
@@ -32,16 +34,21 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+/*
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+ 
     }
+ */
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //追加、add 日時表示
+    //Time is displayed.
+    _detailDescriptionLabel.text = myStr;
     [self configureView];
 }
 

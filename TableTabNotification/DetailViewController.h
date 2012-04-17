@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
-
+@interface DetailViewController : UIViewController {
+    //追加、add 日時受け取り用
+    NSString *myStr;
+}
+//追加、add
+@property (nonatomic,retain) NSString *myStr;
 @property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
